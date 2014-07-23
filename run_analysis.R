@@ -99,4 +99,4 @@ names(dfResult)<-featureNames
 write.table(dfResult,file="ActivitySubjectMeans.txt", na = 'NA', sep = ' ',
             row.names = F, col.names = F)
 
-write.table(names(dfResult), file="result_features.txt")
+write.table(names(dfResult), file="result_features.txt", col.names=F, row.names=F)
